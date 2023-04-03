@@ -2,7 +2,6 @@ import React from "react";
 import Banar from "../components/Banar";
 import { products } from "../db/products";
 import Shopping from "../assets/shopping.png";
-import CategoryProducts from "../components/CategoryProducts";
 import Card from "../components/Card";
 
 const Products = () => {

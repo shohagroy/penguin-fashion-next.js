@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Card = ({ product }) => {
-  const { name, price, img } = product || {};
+  const { id, name, price, img } = product || {};
   return (
     <div className="bg-white rounded-xl p-4 shadow-lg">
       <div className="p-6 bg-gray-200 rounded-xl">
@@ -19,10 +20,12 @@ const Card = ({ product }) => {
         <div className="flex justify-between items-center">
           <p className="text-[#FABE4C] font-bold text-xl">${price}</p>
 
-          <button className=" flex font-bold px-2 py-1 bg-[#84CC16] hover:bg-[#FABE4C] duration-300 rounded-lg text-white">
-            {/* <AiOutlineShoppingCart size={20} /> */}
-            <span className="pl-2">See All</span>
-          </button>
+          <Link href={`products/${id}`}>
+            <button className=" flex font-bold px-2 py-1 bg-[#84CC16] hover:bg-[#FABE4C] duration-300 rounded-lg text-white">
+              {/* <AiOutlineShoppingCart size={20} /> */}
+              <span className="pl-2">See All</span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
