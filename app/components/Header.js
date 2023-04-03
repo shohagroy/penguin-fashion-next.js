@@ -2,19 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../assets/logo.png";
 
-const Header = () => {
-  const getAllProducts = async () => {
-    const res = await fetch("data.json");
-    const data = await res.json();
-
-    console.log(data);
-
-    return data;
-  };
-
-  const products = getAllProducts();
-  console.log(products);
-
+const Header = async () => {
   return (
     <section className="bg-[#FFFBF0] p-3">
       <div className="max-w-[1240px] mx-auto my-5 flex justify-between items-center">
