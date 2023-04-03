@@ -22,7 +22,7 @@ const Banar = () => {
           </button>
         </div>
         <div>
-          <Image src={ModelPictire} width={500} />
+          <Image src={ModelPictire} width={500} alt={"model"} />
         </div>
       </div>
     </section>

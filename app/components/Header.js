@@ -3,12 +3,24 @@ import Link from "next/link";
 import Logo from "../assets/logo.png";
 
 const Header = () => {
+  const getAllProducts = async () => {
+    const res = await fetch("data.json");
+    const data = await res.json();
+
+    console.log(data);
+
+    return data;
+  };
+
+  const products = getAllProducts();
+  console.log(products);
+
   return (
     <section className="bg-[#FFFBF0] p-3">
       <div className="max-w-[1240px] mx-auto my-5 flex justify-between items-center">
-        <div>
-          <Image src={Logo} width={250} />
-        </div>
+        <Link href={"/"}>
+          <Image src={Logo} width={250} alt={"logo"} />
+        </Link>
 
         <div>
           <Link className="p-4  font-semibold" href={"/"}>
