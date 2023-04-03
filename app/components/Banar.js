@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-import ModelPictire from "../assets/model.png";
-
-const Banar = () => {
+const Banar = ({ image }) => {
   return (
     <section className="max-w-[1240px] mx-auto">
       <div className="flex justify-between items-center p-4">
@@ -22,7 +20,7 @@ const Banar = () => {
           </button>
         </div>
         <div>
-          <Image src={ModelPictire} width={500} alt={"model"} />
+          <Image src={image} width={500} alt={"model"} />
         </div>
       </div>
     </section>

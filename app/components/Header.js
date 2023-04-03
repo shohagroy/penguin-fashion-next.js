@@ -14,7 +14,7 @@ const Header = async () => {
           <Link className="p-4  font-semibold" href={"/"}>
             Home
           </Link>
-          <Link className="p-4  font-semibold" href={"/"}>
+          <Link className="p-4  font-semibold" href={"/products"}>
             Product
           </Link>
           <Link className="p-4  font-semibold" href={"/"}>

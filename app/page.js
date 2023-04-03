@@ -1,10 +1,9 @@
 import Banar from "./components/Banar";
 import CategoryProducts from "./components/CategoryProducts";
 import { products } from "./db/products";
+import Model from "./assets/model.png";
 
 export default function Home() {
-  console.log(products);
-
   const menSneakers = products.filter(
     (sneakers) => sneakers.category === "Men's Sneaker"
   );
@@ -26,7 +25,7 @@ export default function Home() {
 
   return (
     <main>
-      <Banar />
+      <Banar image={Model} />
       <CategoryProducts products={menPants} category={"Men's Pants"} />
       <CategoryProducts products={menSneakers} category={"Men's Sneaker"} />
       <CategoryProducts products={menBoots} category={"Men's Boot"} />
