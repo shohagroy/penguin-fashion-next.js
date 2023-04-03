@@ -5,7 +5,7 @@ import Logo from "../assets/logo.png";
 const Header = () => {
   return (
     <section className="bg-[#FFFBF0] p-3">
-      <div className="max-w-[1240px] mx-auto flex justify-between items-center">
+      <div className="max-w-[1240px] mx-auto my-5 flex justify-between items-center">
         <div>
           <Image src={Logo} width={250} />
         </div>

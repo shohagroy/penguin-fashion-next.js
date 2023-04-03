@@ -1,7 +1,9 @@
+import Banar from "./components/Banar";
+
 export default function Home() {
   return (
     <main>
-      <h2>Home Page</h2>
+      <Banar />
     </main>
   );
 }
